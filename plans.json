@@ -1,0 +1,934 @@
+{
+  "schemaVersion": 2,
+  "updatedAt": "2026-11-22T21:31:52+08:00",
+  "plans": [
+    {
+      "id": "zijin",
+      "name": "紫金矿业",
+      "ticker": "601899.SH / 02899.HK",
+      "market": "A/H股",
+      "sector": "资源",
+      "planDate": "2026-11-10",
+      "marketAsOf": "2026-11-09",
+      "referencePrice": "28.41",
+      "currency": "CNY",
+      "decision": "watch",
+      "summary": "观察金铜价格与扩产进度。回调后先核对公告和盈利假设，再评估分批价位。",
+      "thesis": "矿山开发能力支撑长期产量，金铜价格与矿山权益现金流决定股东回报。",
+      "risk": "重大矿权、停产或融资事件应优先触发复核。原方案以 A 股 20.50 元、H 股 22 港元作为价格风控参考。",
+      "exit": "若盈利未上修，A 股 33–36 元、H 股 35–38 港元是原计划的减仓评估区间。",
+      "review": "关注卡莫阿新版矿山计划、巨龙二期爬坡和朱诺投产。",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-10-24/1225620996.PDF",
+      "variants": [
+        {
+          "currency": "CNY",
+          "orders": [
+            {
+              "limitPrice": "27",
+              "condition": "确认无重大矿权、停产或融资坏消息。"
+            },
+            {
+              "limitPrice": "25",
+              "condition": "复核金铜价格和基准盈利。"
+            },
+            {
+              "limitPrice": "23",
+              "condition": "复核国内铜项目与悲观情景。"
+            }
+          ]
+        },
+        {
+          "currency": "HKD",
+          "orders": [
+            {
+              "limitPrice": "28.8",
+              "condition": "确认港股交易单位及最新公告。"
+            },
+            {
+              "limitPrice": "27",
+              "condition": "复核金铜价格与盈利假设。"
+            },
+            {
+              "limitPrice": "24.5",
+              "condition": "复核项目进度与经营风险。"
+            }
+          ]
+        }
+      ],
+      "revision": 1,
+      "updatedAt": "2026-11-22T21:31:52+08:00",
+      "history": [
+        {
+          "revision": 1,
+          "updatedAt": "2026-11-22T21:31:52+08:00",
+          "reason": "发布研究计划。",
+          "snapshot": {
+            "id": "zijin",
+            "name": "紫金矿业",
+            "ticker": "601899.SH / 02899.HK",
+            "market": "A/H股",
+            "sector": "资源",
+            "planDate": "2026-11-10",
+            "marketAsOf": "2026-11-09",
+            "referencePrice": "28.41",
+            "currency": "CNY",
+            "decision": "watch",
+            "summary": "观察金铜价格与扩产进度。回调后先核对公告和盈利假设，再评估分批价位。",
+            "thesis": "矿山开发能力支撑长期产量，金铜价格与矿山权益现金流决定股东回报。",
+            "risk": "重大矿权、停产或融资事件应优先触发复核。原方案以 A 股 20.50 元、H 股 22 港元作为价格风控参考。",
+            "exit": "若盈利未上修，A 股 33–36 元、H 股 35–38 港元是原计划的减仓评估区间。",
+            "review": "关注卡莫阿新版矿山计划、巨龙二期爬坡和朱诺投产。",
+            "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-10-24/1225620996.PDF",
+            "variants": [
+              {
+                "currency": "CNY",
+                "orders": [
+                  {
+                    "limitPrice": "27",
+                    "condition": "确认无重大矿权、停产或融资坏消息。"
+                  },
+                  {
+                    "limitPrice": "25",
+                    "condition": "复核金铜价格和基准盈利。"
+                  },
+                  {
+                    "limitPrice": "23",
+                    "condition": "复核国内铜项目与悲观情景。"
+                  }
+                ]
+              },
+              {
+                "currency": "HKD",
+                "orders": [
+                  {
+                    "limitPrice": "28.8",
+                    "condition": "确认港股交易单位及最新公告。"
+                  },
+                  {
+                    "limitPrice": "27",
+                    "condition": "复核金铜价格与盈利假设。"
+                  },
+                  {
+                    "limitPrice": "24.5",
+                    "condition": "复核项目进度与经营风险。"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "moutai",
+      "name": "贵州茅台",
+      "ticker": "600519.SH",
+      "market": "A股",
+      "sector": "消费",
+      "planDate": "2026-11-11",
+      "marketAsOf": "2026-11-10",
+      "referencePrice": "1439",
+      "currency": "CNY",
+      "decision": "watch",
+      "summary": "等待价格提供更充分的安全边际。到价后复核渠道利润和经营现金流。",
+      "thesis": "品牌优势需要通过销量、实际售价、渠道和股东回报持续验证。",
+      "risk": "连续两个可比报告期利润显著下降，且缺少可信的短期解释时，应重估。",
+      "exit": "中性回报降至原研究门槛以下时复核估值，结合盈利变化决定是否降低集中度。",
+      "review": "检查可比销量、渠道价格、关联资金与股东回报。",
+      "variants": [
+        {
+          "currency": "CNY",
+          "orders": [
+            {
+              "limitPrice": "1100",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            },
+            {
+              "limitPrice": "1000",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            },
+            {
+              "limitPrice": "900",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            },
+            {
+              "limitPrice": "800",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            }
+          ]
+        }
+      ],
+      "revision": 1,
+      "updatedAt": "2026-11-22T21:31:52+08:00",
+      "history": [
+        {
+          "revision": 1,
+          "updatedAt": "2026-11-22T21:31:52+08:00",
+          "reason": "发布研究计划。",
+          "snapshot": {
+            "id": "moutai",
+            "name": "贵州茅台",
+            "ticker": "600519.SH",
+            "market": "A股",
+            "sector": "消费",
+            "planDate": "2026-11-11",
+            "marketAsOf": "2026-11-10",
+            "referencePrice": "1439",
+            "currency": "CNY",
+            "decision": "watch",
+            "summary": "等待价格提供更充分的安全边际。到价后复核渠道利润和经营现金流。",
+            "thesis": "品牌优势需要通过销量、实际售价、渠道和股东回报持续验证。",
+            "risk": "连续两个可比报告期利润显著下降，且缺少可信的短期解释时，应重估。",
+            "exit": "中性回报降至原研究门槛以下时复核估值，结合盈利变化决定是否降低集中度。",
+            "review": "检查可比销量、渠道价格、关联资金与股东回报。",
+            "variants": [
+              {
+                "currency": "CNY",
+                "orders": [
+                  {
+                    "limitPrice": "1100",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  },
+                  {
+                    "limitPrice": "1000",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  },
+                  {
+                    "limitPrice": "900",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  },
+                  {
+                    "limitPrice": "800",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cmb",
+      "name": "招商银行",
+      "ticker": "600036.SH",
+      "market": "A股",
+      "sector": "金融",
+      "planDate": "2026-11-11",
+      "marketAsOf": "2026-11-10",
+      "referencePrice": "43.01",
+      "currency": "CNY",
+      "decision": "watch",
+      "summary": "分批价位须与资产质量复核同时满足。",
+      "thesis": "盈利能力与拨备构成基础，净息差、信用成本和资本约束决定安全边际。",
+      "risk": "净息差持续下探、信用成本抬升或信用卡关注及逾期加速时，暂停并重估。",
+      "exit": "估值未上修时，约 50 元复核未来回报，55 元以上复评减仓。",
+      "review": "跟踪净息差、普通股 ROE、信用卡风险和拨备。",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-10-31/1225649239.PDF",
+      "variants": [
+        {
+          "currency": "CNY",
+          "orders": [
+            {
+              "limitPrice": "38.5",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            },
+            {
+              "limitPrice": "35.5",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            },
+            {
+              "limitPrice": "32",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            }
+          ]
+        }
+      ],
+      "revision": 1,
+      "updatedAt": "2026-11-22T21:31:52+08:00",
+      "history": [
+        {
+          "revision": 1,
+          "updatedAt": "2026-11-22T21:31:52+08:00",
+          "reason": "发布研究计划。",
+          "snapshot": {
+            "id": "cmb",
+            "name": "招商银行",
+            "ticker": "600036.SH",
+            "market": "A股",
+            "sector": "金融",
+            "planDate": "2026-11-11",
+            "marketAsOf": "2026-11-10",
+            "referencePrice": "43.01",
+            "currency": "CNY",
+            "decision": "watch",
+            "summary": "分批价位须与资产质量复核同时满足。",
+            "thesis": "盈利能力与拨备构成基础，净息差、信用成本和资本约束决定安全边际。",
+            "risk": "净息差持续下探、信用成本抬升或信用卡关注及逾期加速时，暂停并重估。",
+            "exit": "估值未上修时，约 50 元复核未来回报，55 元以上复评减仓。",
+            "review": "跟踪净息差、普通股 ROE、信用卡风险和拨备。",
+            "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-10-31/1225649239.PDF",
+            "variants": [
+              {
+                "currency": "CNY",
+                "orders": [
+                  {
+                    "limitPrice": "38.5",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  },
+                  {
+                    "limitPrice": "35.5",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  },
+                  {
+                    "limitPrice": "32",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "midea",
+      "name": "美的集团",
+      "ticker": "000333.SZ",
+      "market": "A股",
+      "sector": "家电",
+      "planDate": "2026-11-10",
+      "marketAsOf": "2026-11-09",
+      "referencePrice": "89.79",
+      "currency": "CNY",
+      "decision": "conditional",
+      "summary": "原计划允许在估值和经营条件同时满足时分批参与。",
+      "thesis": "正常利润与现金转化支撑估值，资本配置与净套保仍需跟踪。",
+      "risk": "现金基础或核心竞争力恶化、出现重大治理问题时，先复核并降低风险。",
+      "exit": "95–105 元复核前瞻回报，110–120 元且正常利润未上修时评估减仓。",
+      "review": "关注现金、套保、减值、分红和注销。",
+      "variants": [
+        {
+          "currency": "CNY",
+          "orders": [
+            {
+              "limitPrice": "90",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            },
+            {
+              "limitPrice": "82",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            },
+            {
+              "limitPrice": "75",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            }
+          ]
+        }
+      ],
+      "revision": 1,
+      "updatedAt": "2026-11-22T21:31:52+08:00",
+      "history": [
+        {
+          "revision": 1,
+          "updatedAt": "2026-11-22T21:31:52+08:00",
+          "reason": "发布研究计划。",
+          "snapshot": {
+            "id": "midea",
+            "name": "美的集团",
+            "ticker": "000333.SZ",
+            "market": "A股",
+            "sector": "家电",
+            "planDate": "2026-11-10",
+            "marketAsOf": "2026-11-09",
+            "referencePrice": "89.79",
+            "currency": "CNY",
+            "decision": "conditional",
+            "summary": "原计划允许在估值和经营条件同时满足时分批参与。",
+            "thesis": "正常利润与现金转化支撑估值，资本配置与净套保仍需跟踪。",
+            "risk": "现金基础或核心竞争力恶化、出现重大治理问题时，先复核并降低风险。",
+            "exit": "95–105 元复核前瞻回报，110–120 元且正常利润未上修时评估减仓。",
+            "review": "关注现金、套保、减值、分红和注销。",
+            "variants": [
+              {
+                "currency": "CNY",
+                "orders": [
+                  {
+                    "limitPrice": "90",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  },
+                  {
+                    "limitPrice": "82",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  },
+                  {
+                    "limitPrice": "75",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "byd",
+      "name": "比亚迪",
+      "ticker": "002594.SZ",
+      "market": "A股",
+      "sector": "汽车",
+      "planDate": "2026-11-10",
+      "marketAsOf": "2026-11-09",
+      "referencePrice": "84.9",
+      "currency": "CNY",
+      "decision": "watch",
+      "summary": "等待估值与经营证据同时改善。",
+      "thesis": "扣非利润与现金转换须共同证实复苏。",
+      "risk": "库存、应收与现金占用恶化，或出现重大质量、会计和偿债问题时，重估。",
+      "exit": "若盈利和现金流未上修，95–105 元与 110–120 元分别复核减仓。",
+      "review": "跟踪终端份额、折扣、扣非利润和营运资本。",
+      "variants": [
+        {
+          "currency": "CNY",
+          "orders": [
+            {
+              "limitPrice": "74",
+              "condition": "扣非持续改善，国内终端趋稳。",
+              "limitLow": "70"
+            },
+            {
+              "limitPrice": "66",
+              "condition": "库存、应收与资金占用改善。",
+              "limitLow": "62"
+            },
+            {
+              "limitPrice": "58",
+              "condition": "复核质量、会计与偿债风险。",
+              "limitLow": "54"
+            }
+          ]
+        }
+      ],
+      "revision": 1,
+      "updatedAt": "2026-11-22T21:31:52+08:00",
+      "history": [
+        {
+          "revision": 1,
+          "updatedAt": "2026-11-22T21:31:52+08:00",
+          "reason": "发布研究计划。",
+          "snapshot": {
+            "id": "byd",
+            "name": "比亚迪",
+            "ticker": "002594.SZ",
+            "market": "A股",
+            "sector": "汽车",
+            "planDate": "2026-11-10",
+            "marketAsOf": "2026-11-09",
+            "referencePrice": "84.9",
+            "currency": "CNY",
+            "decision": "watch",
+            "summary": "等待估值与经营证据同时改善。",
+            "thesis": "扣非利润与现金转换须共同证实复苏。",
+            "risk": "库存、应收与现金占用恶化，或出现重大质量、会计和偿债问题时，重估。",
+            "exit": "若盈利和现金流未上修，95–105 元与 110–120 元分别复核减仓。",
+            "review": "跟踪终端份额、折扣、扣非利润和营运资本。",
+            "variants": [
+              {
+                "currency": "CNY",
+                "orders": [
+                  {
+                    "limitPrice": "74",
+                    "condition": "扣非持续改善，国内终端趋稳。",
+                    "limitLow": "70"
+                  },
+                  {
+                    "limitPrice": "66",
+                    "condition": "库存、应收与资金占用改善。",
+                    "limitLow": "62"
+                  },
+                  {
+                    "limitPrice": "58",
+                    "condition": "复核质量、会计与偿债风险。",
+                    "limitLow": "54"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cypc",
+      "name": "长江电力",
+      "ticker": "600900.SH",
+      "market": "A股",
+      "sector": "公用事业",
+      "planDate": "2026-11-12",
+      "marketAsOf": "2026-11-11",
+      "referencePrice": "29.48",
+      "currency": "CNY",
+      "decision": "watch",
+      "summary": "等待估值折价并核对电价、分红和最新安全情况。",
+      "thesis": "来水、电价、分红现金基础与再投资回报共同影响长期收益。",
+      "risk": "结构性电价下行、分红现金基础受损或重大治理和安全问题须优先重估。",
+      "exit": "盈利不变时在 29–31 元复核未来收益，超过 33 元评估分批减仓。",
+      "review": "下一份年报披露后重核盈利与分红假设。",
+      "variants": [
+        {
+          "currency": "CNY",
+          "orders": [
+            {
+              "limitPrice": "26",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            },
+            {
+              "limitPrice": "24.5",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            },
+            {
+              "limitPrice": "23",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            },
+            {
+              "limitPrice": "21.5",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            }
+          ]
+        }
+      ],
+      "revision": 1,
+      "updatedAt": "2026-11-22T21:31:52+08:00",
+      "history": [
+        {
+          "revision": 1,
+          "updatedAt": "2026-11-22T21:31:52+08:00",
+          "reason": "发布研究计划。",
+          "snapshot": {
+            "id": "cypc",
+            "name": "长江电力",
+            "ticker": "600900.SH",
+            "market": "A股",
+            "sector": "公用事业",
+            "planDate": "2026-11-12",
+            "marketAsOf": "2026-11-11",
+            "referencePrice": "29.48",
+            "currency": "CNY",
+            "decision": "watch",
+            "summary": "等待估值折价并核对电价、分红和最新安全情况。",
+            "thesis": "来水、电价、分红现金基础与再投资回报共同影响长期收益。",
+            "risk": "结构性电价下行、分红现金基础受损或重大治理和安全问题须优先重估。",
+            "exit": "盈利不变时在 29–31 元复核未来收益，超过 33 元评估分批减仓。",
+            "review": "下一份年报披露后重核盈利与分红假设。",
+            "variants": [
+              {
+                "currency": "CNY",
+                "orders": [
+                  {
+                    "limitPrice": "26",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  },
+                  {
+                    "limitPrice": "24.5",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  },
+                  {
+                    "limitPrice": "23",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  },
+                  {
+                    "limitPrice": "21.5",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "nvidia",
+      "name": "英伟达",
+      "ticker": "NVDA",
+      "market": "美股",
+      "sector": "科技",
+      "planDate": "2026-11-13",
+      "marketAsOf": "2026-11-13",
+      "referencePrice": null,
+      "currency": "USD",
+      "decision": "watch",
+      "summary": "先复核财报、管理交接和回款，再判断是否启用研究价位。",
+      "thesis": "产品交付、客户信用和回款决定利润能否转化为股东现金。",
+      "risk": "重大监管认定、信用事件或产品问题可能使原假设失效。",
+      "exit": "根据后续财报、盈利假设和现金流更新估值与退出条件。",
+      "review": "复核原计划截至研究日后的财报、管理交接、交付和回款。",
+      "variants": [
+        {
+          "currency": "USD",
+          "orders": [
+            {
+              "limitPrice": "155",
+              "condition": "核查财报与管理交接。"
+            },
+            {
+              "limitPrice": "145",
+              "condition": "需要需求与回款的新证据。"
+            },
+            {
+              "limitPrice": "130",
+              "condition": "再有一个季度经营验证。"
+            },
+            {
+              "limitPrice": "115",
+              "condition": "至少两次后续季报支持。"
+            }
+          ]
+        },
+        {
+          "currency": "USD",
+          "orders": [
+            {
+              "limitPrice": "155",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            },
+            {
+              "limitPrice": "145",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            },
+            {
+              "limitPrice": "130",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            },
+            {
+              "limitPrice": "115",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            }
+          ]
+        }
+      ],
+      "revision": 1,
+      "updatedAt": "2026-11-22T21:31:52+08:00",
+      "history": [
+        {
+          "revision": 1,
+          "updatedAt": "2026-11-22T21:31:52+08:00",
+          "reason": "发布研究计划。",
+          "snapshot": {
+            "id": "nvidia",
+            "name": "英伟达",
+            "ticker": "NVDA",
+            "market": "美股",
+            "sector": "科技",
+            "planDate": "2026-11-13",
+            "marketAsOf": "2026-11-13",
+            "referencePrice": null,
+            "currency": "USD",
+            "decision": "watch",
+            "summary": "先复核财报、管理交接和回款，再判断是否启用研究价位。",
+            "thesis": "产品交付、客户信用和回款决定利润能否转化为股东现金。",
+            "risk": "重大监管认定、信用事件或产品问题可能使原假设失效。",
+            "exit": "根据后续财报、盈利假设和现金流更新估值与退出条件。",
+            "review": "复核原计划截至研究日后的财报、管理交接、交付和回款。",
+            "variants": [
+              {
+                "currency": "USD",
+                "orders": [
+                  {
+                    "limitPrice": "155",
+                    "condition": "核查财报与管理交接。"
+                  },
+                  {
+                    "limitPrice": "145",
+                    "condition": "需要需求与回款的新证据。"
+                  },
+                  {
+                    "limitPrice": "130",
+                    "condition": "再有一个季度经营验证。"
+                  },
+                  {
+                    "limitPrice": "115",
+                    "condition": "至少两次后续季报支持。"
+                  }
+                ]
+              },
+              {
+                "currency": "USD",
+                "orders": [
+                  {
+                    "limitPrice": "155",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  },
+                  {
+                    "limitPrice": "145",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  },
+                  {
+                    "limitPrice": "130",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  },
+                  {
+                    "limitPrice": "115",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "micron",
+      "name": "美光科技",
+      "ticker": "MU",
+      "market": "美股",
+      "sector": "科技",
+      "planDate": "2026-11-13",
+      "marketAsOf": "2026-11-11",
+      "referencePrice": "811.3",
+      "currency": "USD",
+      "decision": "watch",
+      "summary": "在盈利、技术及合同条件维持时，才评估分批研究价位。",
+      "thesis": "内存周期、HBM 认证与资本开支后的自由现金流需共同验证。",
+      "risk": "价格下行、库存走高、技术延期或主要合同永久受损时，暂停并重估。",
+      "exit": "盈利模型未上修时，1,000–1,150 美元及 1,300 美元以上分别评估减仓。",
+      "review": "关注 DRAM/NAND 价格、库存天数、回款与 HBM 交付。",
+      "variants": [
+        {
+          "currency": "USD",
+          "orders": [
+            {
+              "limitPrice": "650",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            },
+            {
+              "limitPrice": "575",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            },
+            {
+              "limitPrice": "500",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            },
+            {
+              "limitPrice": "425",
+              "condition": "到价后核对经营假设、最新公告及报价。"
+            }
+          ]
+        }
+      ],
+      "revision": 1,
+      "updatedAt": "2026-11-22T21:31:52+08:00",
+      "history": [
+        {
+          "revision": 1,
+          "updatedAt": "2026-11-22T21:31:52+08:00",
+          "reason": "发布研究计划。",
+          "snapshot": {
+            "id": "micron",
+            "name": "美光科技",
+            "ticker": "MU",
+            "market": "美股",
+            "sector": "科技",
+            "planDate": "2026-11-13",
+            "marketAsOf": "2026-11-11",
+            "referencePrice": "811.3",
+            "currency": "USD",
+            "decision": "watch",
+            "summary": "在盈利、技术及合同条件维持时，才评估分批研究价位。",
+            "thesis": "内存周期、HBM 认证与资本开支后的自由现金流需共同验证。",
+            "risk": "价格下行、库存走高、技术延期或主要合同永久受损时，暂停并重估。",
+            "exit": "盈利模型未上修时，1,000–1,150 美元及 1,300 美元以上分别评估减仓。",
+            "review": "关注 DRAM/NAND 价格、库存天数、回款与 HBM 交付。",
+            "variants": [
+              {
+                "currency": "USD",
+                "orders": [
+                  {
+                    "limitPrice": "650",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  },
+                  {
+                    "limitPrice": "575",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  },
+                  {
+                    "limitPrice": "500",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  },
+                  {
+                    "limitPrice": "425",
+                    "condition": "到价后核对经营假设、最新公告及报价。"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "yuyuan",
+      "name": "老庙黄金 / 豫园股份",
+      "ticker": "600655.SH",
+      "market": "A股",
+      "sector": "消费",
+      "planDate": "2026-11-15",
+      "marketAsOf": "2026-11-13",
+      "referencePrice": "4.36",
+      "currency": "CNY",
+      "decision": "avoid",
+      "summary": "维持观察。只有经营与融资准入条件全部成立，才评估条件价位。",
+      "thesis": "珠宝品牌之外，集团资产、融资负担与回款决定上市公司收益。",
+      "risk": "重大信用、审计或治理问题，以及净融资压力恶化，均需优先复核。",
+      "exit": "股价超过当时重估的合理价值时评估兑现，长期缺乏经营进展时重审。",
+      "review": "核对连续两季扣非、珠宝经营、库存、现金与净融资。",
+      "variants": [
+        {
+          "currency": "CNY",
+          "orders": [
+            {
+              "limitPrice": "2.8",
+              "condition": "连续两季扣非盈利且融资、现金与珠宝指标共同改善。"
+            },
+            {
+              "limitPrice": "2.5",
+              "condition": "新增披露确认改善持续，排除信用恶化。"
+            },
+            {
+              "limitPrice": "3",
+              "condition": "新证据支持持续归母至少 12 亿元。"
+            }
+          ]
+        }
+      ],
+      "revision": 1,
+      "updatedAt": "2026-11-22T21:31:52+08:00",
+      "history": [
+        {
+          "revision": 1,
+          "updatedAt": "2026-11-22T21:31:52+08:00",
+          "reason": "发布研究计划。",
+          "snapshot": {
+            "id": "yuyuan",
+            "name": "老庙黄金 / 豫园股份",
+            "ticker": "600655.SH",
+            "market": "A股",
+            "sector": "消费",
+            "planDate": "2026-11-15",
+            "marketAsOf": "2026-11-13",
+            "referencePrice": "4.36",
+            "currency": "CNY",
+            "decision": "avoid",
+            "summary": "维持观察。只有经营与融资准入条件全部成立，才评估条件价位。",
+            "thesis": "珠宝品牌之外，集团资产、融资负担与回款决定上市公司收益。",
+            "risk": "重大信用、审计或治理问题，以及净融资压力恶化，均需优先复核。",
+            "exit": "股价超过当时重估的合理价值时评估兑现，长期缺乏经营进展时重审。",
+            "review": "核对连续两季扣非、珠宝经营、库存、现金与净融资。",
+            "variants": [
+              {
+                "currency": "CNY",
+                "orders": [
+                  {
+                    "limitPrice": "2.8",
+                    "condition": "连续两季扣非盈利且融资、现金与珠宝指标共同改善。"
+                  },
+                  {
+                    "limitPrice": "2.5",
+                    "condition": "新增披露确认改善持续，排除信用恶化。"
+                  },
+                  {
+                    "limitPrice": "3",
+                    "condition": "新证据支持持续归母至少 12 亿元。"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "laopu",
+      "name": "老铺黄金",
+      "ticker": "06181.HK",
+      "market": "港股",
+      "sector": "消费",
+      "planDate": "2026-11-19",
+      "marketAsOf": "2026-11-18",
+      "referencePrice": "279.2",
+      "currency": "HKD",
+      "decision": "watch",
+      "summary": "观察库存与现金转化，买入条件须同时具备估值折价和经营证据。",
+      "thesis": "品牌溢价需要由周转、经营现金和持续的盈利能力支撑。",
+      "risk": "严重品控、融资或诚信问题，以及持续的库存和现金恶化，应暂停并重估。",
+      "exit": "经营证据未改善时，350–400 港元是原计划的估值复核区间。",
+      "review": "核对股东会派息结果，除息后重估原价格水平。",
+      "variants": [
+        {
+          "currency": "HKD",
+          "orders": [
+            {
+              "limitPrice": "240",
+              "condition": "核对公告、品控、信用及正常化利润。"
+            },
+            {
+              "limitPrice": "210",
+              "condition": "新增经营证据，且现金和融资压力未恶化。"
+            },
+            {
+              "limitPrice": "240",
+              "condition": "需有正常化利润、现金及成品周转改善的证据。"
+            }
+          ]
+        }
+      ],
+      "revision": 1,
+      "updatedAt": "2026-11-22T21:31:52+08:00",
+      "history": [
+        {
+          "revision": 1,
+          "updatedAt": "2026-11-22T21:31:52+08:00",
+          "reason": "发布研究计划。",
+          "snapshot": {
+            "id": "laopu",
+            "name": "老铺黄金",
+            "ticker": "06181.HK",
+            "market": "港股",
+            "sector": "消费",
+            "planDate": "2026-11-19",
+            "marketAsOf": "2026-11-18",
+            "referencePrice": "279.2",
+            "currency": "HKD",
+            "decision": "watch",
+            "summary": "观察库存与现金转化，买入条件须同时具备估值折价和经营证据。",
+            "thesis": "品牌溢价需要由周转、经营现金和持续的盈利能力支撑。",
+            "risk": "严重品控、融资或诚信问题，以及持续的库存和现金恶化，应暂停并重估。",
+            "exit": "经营证据未改善时，350–400 港元是原计划的估值复核区间。",
+            "review": "核对股东会派息结果，除息后重估原价格水平。",
+            "variants": [
+              {
+                "currency": "HKD",
+                "orders": [
+                  {
+                    "limitPrice": "240",
+                    "condition": "核对公告、品控、信用及正常化利润。"
+                  },
+                  {
+                    "limitPrice": "210",
+                    "condition": "新增经营证据，且现金和融资压力未恶化。"
+                  },
+                  {
+                    "limitPrice": "240",
+                    "condition": "需有正常化利润、现金及成品周转改善的证据。"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
