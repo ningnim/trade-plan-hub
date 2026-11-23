@@ -20,6 +20,7 @@ const palette = {
 };
 const state = { view: 'overview', filter: 'all', search: '', market: 'all', variant: 0, detail: null };
 let ledger;
+const closingChecks = new Map();
 let toastTimer;
 let detailTrigger;
 
@@ -31,6 +32,60 @@ function needsReview(plan) {
 
 function badge(plan) {
   return `<span class="badge ${escapeHtml(plan.decision)}">${escapeHtml(decisions[plan.decision] || plan.decision)}</span>`;
+}
+
+function checksFor(plan) {
+  return (closingChecks.get(plan.id) || []).filter((check) =>
+    check.currency !== plan.currency || check.marketAsOf >= plan.marketAsOf
+  );
+}
+
+function primaryCheck(plan) {
+  return checksFor(plan).find((check) => check.currency === plan.currency);
+}
+
+function closingStatus(plan, check) {
+  if (check.planRevision !== plan.revision) return { label: '计划已更新 · 待复核', tone: 'review' };
+  const states = {
+    not_reached: { label: '收盘未到价', tone: 'watch' },
+    participate: { label: '到价 · 有条件参与', tone: 'conditional' },
+    defer: { label: '到价 · 暂缓', tone: 'paused' },
+    insufficient: { label: '到价 · 待核实', tone: 'review' },
+  };
+  return states[check.status] || states.insufficient;
+}
+
+function closingBadge(plan, check) {
+  const status = closingStatus(plan, check);
+  return `<span class="badge ${status.tone}">${status.label}</span>`;
+}
+
+function closingLinks(urls, label) {
+  return urls.filter((url) => url.startsWith('https://')).map((url, index) =>
+    `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${label}来源 ${index + 1}</a>`
+  ).join('');
+}
+
+function closingDetails(plan) {
+  const checks = checksFor(plan);
+  if (!checks.length) return '';
+  return `<section class="closing-details" aria-labelledby="closing-heading"><h3 id="closing-heading">收盘检查</h3>
+    ${checks.map((check) => {
+      const current = check.planRevision === plan.revision;
+      const matches = current ? check.matches : [];
+      const showVariant = plan.variants.filter((variant) => variant.currency === check.currency).length > 1;
+      return `<article class="closing-result">
+        <div class="closing-result-head"><span>${escapeHtml(currencyNames[check.currency])}</span>
+        ${price(number(check.close), check.currency)}
+        <time datetime="${escapeHtml(check.marketAsOf)}">${escapeHtml(check.marketAsOf)}</time>${closingBadge(plan, check)}</div>
+        ${matches.length ? `<p class="closing-matches">${matches.map((match) =>
+          `${showVariant ? `方案 ${match.variant + 1} · ` : ''}第 ${match.order + 1} 档${match.position === 'below' ? '（跌穿区间）' : ''}`
+        ).join('、')}</p>` : ''}
+        <p>${current ? escapeHtml(check.note) : '请按新版执行条件重新复核。'}</p>
+        <div class="closing-links">${closingLinks(check.quoteSources, '行情')}${current ? closingLinks(check.reviewSources, '复核') : ''}</div>
+      </article>`;
+    }).join('')}
+    </section>`;
 }
 
 function logo(plan) {
@@ -64,20 +119,21 @@ function price(value, currency) {
 function feature(plan) {
   const variant = plan.variants[0];
   const levels = variant?.orders.slice(0, 3);
+  const check = primaryCheck(plan);
   return `<article class="feature-panel ${plan.id === 'zijin' ? 'feature-mine' : ''}" aria-labelledby="featured-title">
     ${plan.id === 'zijin' ? '<img class="feature-image" src="./mine-cover.jpg" alt="" fetchpriority="high" decoding="async">' : ''}
     <div class="feature-content">
       <div class="feature-label"><span>重点跟踪</span><span>${escapeHtml(plan.sector)}</span></div>
       <h2 id="featured-title">${escapeHtml(plan.name)}</h2>
       <p class="feature-ticker">${escapeHtml(plan.ticker)}</p>
-      <p class="feature-summary">${escapeHtml(plan.summary)}</p>
+      <p class="feature-summary">${check ? '<span class="plan-summary-label">计划摘要</span>' : ''}${escapeHtml(plan.summary)}</p>
       <div class="feature-data">
-        <div><span class="feature-data-label">参考价 · ${escapeHtml(plan.marketAsOf)}</span>${price(number(plan.referencePrice), plan.currency)}</div>
+        <div><span class="feature-data-label">${check ? '收盘价' : '参考价'} · ${escapeHtml(check?.marketAsOf ?? plan.marketAsOf)}</span>${price(number(check?.close ?? plan.referencePrice), plan.currency)}</div>
         ${levels?.length ? `<div><span class="feature-data-label">分批参考价</span><span class="feature-levels">${levels.map(priceBand).join(' / ')}</span></div>` : ''}
       </div>
       <div class="feature-actions">
         <a class="button feature-link" href="${planUrl(plan.id)}" data-plan="${escapeHtml(plan.id)}">查看交易计划</a>
-        ${badge(plan)}
+        ${check ? closingBadge(plan, check) : badge(plan)}
       </div>
     </div>
   </article>`;
@@ -104,19 +160,20 @@ function updates(excludedPlan) {
 function card(plan) {
   const variant = plan.variants[0];
   const first = variant?.orders[0];
+  const check = primaryCheck(plan);
   return `<article class="plan-card" aria-labelledby="card-${escapeHtml(plan.id)}">
     <div class="card-top">${logo(plan)}
       <div class="company-heading"><h3 id="card-${escapeHtml(plan.id)}">${escapeHtml(plan.name)}</h3>
       <p class="ticker">${escapeHtml(plan.ticker)} · ${escapeHtml(plan.market)}</p></div>
     </div>
-    <p class="card-summary">${escapeHtml(plan.summary)}</p>
+    <p class="card-summary">${check ? '<span class="plan-summary-label">计划摘要</span>' : ''}${escapeHtml(plan.summary)}</p>
     <div class="card-prices">
-      <div><span class="price-label">历史参考价</span>${price(number(plan.referencePrice), plan.currency)}</div>
+      <div><span class="price-label">${check ? '核实收盘价' : '历史参考价'}</span>${price(number(check?.close ?? plan.referencePrice), plan.currency)}</div>
       <div><span class="price-label">首档参考价</span>${price(first ? priceBand(first) : '—', variant?.currency)}</div>
     </div>
-    <div class="card-footer"><div class="card-status">${badge(plan)}${needsReview(plan) ? '<span class="review-label">待复核</span>' : ''}</div>
+    <div class="card-footer"><div class="card-status">${check ? closingBadge(plan, check) : badge(plan)}${needsReview(plan) ? '<span class="review-label">计划待复核</span>' : ''}</div>
       <a class="card-link" href="${planUrl(plan.id)}" data-plan="${escapeHtml(plan.id)}" aria-label="查看${escapeHtml(plan.name)}计划">查看计划</a></div>
-    <div class="card-date"><span>${escapeHtml(plan.sector)}</span><span>行情 ${escapeHtml(plan.marketAsOf)}</span></div>
+    <div class="card-date"><span>${escapeHtml(plan.sector)}</span><span>行情 ${escapeHtml(check?.marketAsOf ?? plan.marketAsOf)}</span></div>
   </article>`;
 }
 
@@ -125,7 +182,7 @@ function renderCards() {
   if (!container) return;
   const query = state.search.trim().toLowerCase();
   const list = ledger.plans.filter((plan) =>
-    (state.filter === 'all' || (state.filter === 'review' ? needsReview(plan) : state.filter === plan.decision)) &&
+    matchesFilter(plan) &&
     (state.market === 'all' || state.market === plan.market) &&
     `${plan.name} ${plan.ticker} ${plan.sector}`.toLowerCase().includes(query)
   );
@@ -134,11 +191,20 @@ function renderCards() {
     '<div class="empty"><p>没有匹配的计划。</p><button class="button" type="button" data-reset>清除筛选</button></div>';
 }
 
+function matchesFilter(plan) {
+  if (state.filter === 'all') return true;
+  if (state.filter === 'review') return needsReview(plan);
+  if (state.filter === 'reached') return checksFor(plan).some((check) =>
+    check.planRevision === plan.revision && check.matches.length > 0
+  );
+  return state.filter === plan.decision;
+}
+
 function overview() {
   const featured = ledger.plans.find((plan) => plan.id === 'zijin') || ledger.plans[0];
   const pending = ledger.plans.filter(needsReview).length;
   const markets = [...new Set(ledger.plans.map((plan) => plan.market))];
-  const filters = { all: '全部', review: '待复核', ...decisions };
+  const filters = { all: '全部', ...(closingChecks.size ? { reached: '收盘已到价' } : {}), review: '待复核', ...decisions };
   const active = new Set(ledger.plans.map((plan) => plan.decision));
   return `<div class="home-intro">
     ${heading('公司研究与交易计划', '查阅 A 股、港股和美股的分批价位、执行条件与研究记录。')}
@@ -154,7 +220,7 @@ function overview() {
         </div>
       </div>
       <div class="filters" role="group" aria-label="筛选计划">
-        ${Object.entries(filters).filter(([key]) => ['all', 'review'].includes(key) || active.has(key)).map(([key, label]) =>
+        ${Object.entries(filters).filter(([key]) => !Object.hasOwn(decisions, key) || active.has(key)).map(([key, label]) =>
           `<button class="filter" type="button" aria-pressed="${key === state.filter}" data-filter="${key}">${label}</button>`
         ).join('')}
       </div>
@@ -208,6 +274,7 @@ function showDetail() {
         <div class="detail-quote"><span class="price-label">历史参考价</span>${price(number(plan.referencePrice), plan.currency)}
         <time datetime="${escapeHtml(plan.marketAsOf)}">${escapeHtml(plan.marketAsOf)}</time></div>
       </section>
+      ${revision == null ? closingDetails(plan) : ''}
       <div class="detail-grid">
         <section class="detail-orders" aria-labelledby="orders-heading">
           <h3 id="orders-heading">分批参考价位</h3>
@@ -311,11 +378,22 @@ window.addEventListener('hashchange', () => { if (ledger) applyRoute(); });
 
 async function loadPlans() {
   try {
+    const closeData = fetch('./closing-checks.json', { cache: 'no-store' })
+      .then((response) => response.ok ? response.json() : null)
+      .catch(() => null);
     const response = await fetch('./plans.json', { cache: 'no-store' });
     if (!response.ok) throw new Error('data unavailable');
     const data = await response.json();
     if (data.schemaVersion !== 2 || !Array.isArray(data.plans)) throw new Error('unexpected data format');
     ledger = data;
+    const closing = await closeData;
+    if (closing?.schemaVersion === 1 && Array.isArray(closing.checks)) {
+      for (const check of closing.checks) {
+        const entries = closingChecks.get(check.id) || [];
+        entries.push(check);
+        closingChecks.set(check.id, entries);
+      }
+    }
     render();
     applyRoute();
   } catch (error) {

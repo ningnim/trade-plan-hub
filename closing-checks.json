@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-23T16:42:57+00:00",
+  "checks": [
+    {
+      "id": "apple",
+      "currency": "USD",
+      "marketAsOf": "2026-11-20",
+      "close": "342.56",
+      "planRevision": 1,
+      "matches": [],
+      "status": "not_reached",
+      "note": "收盘价尚未进入计划参考区间。",
+      "quoteSources": [
+        "https://stockanalysis.com/stocks/aapl/history/",
+        "https://www.quiverquant.com/stock/AAPL/historical-prices/"
+      ],
+      "reviewSources": []
+    },
+    {
+      "id": "byd",
+      "currency": "CNY",
+      "marketAsOf": "2026-11-23",
+      "close": "78.04",
+      "planRevision": 1,
+      "matches": [],
+      "status": "not_reached",
+      "note": "收盘价尚未进入计划参考区间。",
+      "quoteSources": [
+        "https://summary.jrj.com.cn/stock/sz/002594",
+        "https://www.zhunshangshi.com/hq/detail.php?tab=flow&ts_code=002594.SZ"
+      ],
+      "reviewSources": []
+    },
+    {
+      "id": "cmb",
+      "currency": "CNY",
+      "marketAsOf": "2026-11-23",
+      "close": "43.26",
+      "planRevision": 1,
+      "matches": [],
+      "status": "not_reached",
+      "note": "收盘价尚未进入计划参考区间。",
+      "quoteSources": [
+        "https://summary.jrj.com.cn/stock/sh/600036",
+        "https://longbridge.com/zh-CN/quote/600036.SH"
+      ],
+      "reviewSources": []
+    },
+    {
+      "id": "cypc",
+      "currency": "CNY",
+      "marketAsOf": "2026-11-23",
+      "close": "31.35",
+      "planRevision": 1,
+      "matches": [],
+      "status": "not_reached",
+      "note": "收盘价尚未进入计划参考区间。",
+      "quoteSources": [
+        "https://cn.investing.com/equities/yangtze-power-historical-data",
+        "https://stock.stockstar.com/RB2026112300020323.shtml"
+      ],
+      "reviewSources": []
+    },
+    {
+      "id": "laopu",
+      "currency": "HKD",
+      "marketAsOf": "2026-11-23",
+      "close": "266.80",
+      "planRevision": 3,
+      "matches": [],
+      "status": "not_reached",
+      "note": "收盘价尚未进入计划参考区间。",
+      "quoteSources": [
+        "https://ca.investing.com/equities/laopu-gold-historical-data",
+        "https://markets.ft.markitdigital.com/data/equities/tearsheet/summary?s=6181%3AHKG"
+      ],
+      "reviewSources": []
+    },
+    {
+      "id": "micron",
+      "currency": "USD",
+      "marketAsOf": "2026-11-20",
+      "close": "594.51",
+      "planRevision": 1,
+      "matches": [
+        {
+          "variant": 0,
+          "order": 0,
+          "position": "within"
+        }
+      ],
+      "status": "insufficient",
+      "note": "已进入650美元首档。最近年报支持原有盈利和产能逻辑，但原计划要求核清大跌原因。芯片股同步大跌提供了行业背景，本次仍待核实当前DRAM/NAND实现价、客户交付与HBM是否出现重大变化。",
+      "quoteSources": [
+        "https://ph.investing.com/equities/micron-tech-historical-data",
+        "https://www.financecharts.com/stocks/MU/summary/price"
+      ],
+      "reviewSources": [
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm",
+        "https://investors.micron.com/overview/default.aspx"
+      ]
+    },
+    {
+      "id": "microsoft",
+      "currency": "USD",
+      "marketAsOf": "2026-11-20",
+      "close": "484.52",
+      "planRevision": 1,
+      "matches": [],
+      "status": "not_reached",
+      "note": "收盘价尚未进入计划参考区间。",
+      "quoteSources": [
+        "https://nz.finance.yahoo.com/quote/MSFT/history/",
+        "https://www.quiverquant.com/stock/MSFT/historical-prices/"
+      ],
+      "reviewSources": []
+    },
+    {
+      "id": "midea",
+      "currency": "CNY",
+      "marketAsOf": "2026-11-23",
+      "close": "94.13",
+      "planRevision": 1,
+      "matches": [],
+      "status": "not_reached",
+      "note": "收盘价尚未进入计划参考区间。",
+      "quoteSources": [
+        "https://cn.investing.com/equities/midea-group-a-historical-data",
+        "https://summary.jrj.com.cn/stock/sz/000333"
+      ],
+      "reviewSources": []
+    },
+    {
+      "id": "moutai",
+      "currency": "CNY",
+      "marketAsOf": "2026-11-23",
+      "close": "1439.00",
+      "planRevision": 1,
+      "matches": [],
+      "status": "not_reached",
+      "note": "收盘价尚未进入计划参考区间。",
+      "quoteSources": [
+        "https://summary.jrj.com.cn/stock/sh/600519",
+        "https://www.laocaifu.com/stock/600519/lishi/"
+      ],
+      "reviewSources": []
+    },
+    {
+      "id": "nvidia",
+      "currency": "USD",
+      "marketAsOf": "2026-11-20",
+      "close": "125.53",
+      "planRevision": 1,
+      "matches": [
+        {
+          "variant": 0,
+          "order": 0,
+          "position": "within"
+        },
+        {
+          "variant": 0,
+          "order": 1,
+          "position": "within"
+        },
+        {
+          "variant": 0,
+          "order": 2,
+          "position": "within"
+        },
+        {
+          "variant": 1,
+          "order": 0,
+          "position": "within"
+        },
+        {
+          "variant": 1,
+          "order": 1,
+          "position": "within"
+        },
+        {
+          "variant": 1,
+          "order": 2,
+          "position": "within"
+        }
+      ],
+      "status": "defer",
+      "note": "11月20日正式收盘触及多个档位。新季报收入同比增长103%，11月23日公司宣布黄仁勋复任，同时董事会独立调查仍在继续。先用下一次正式收盘重验价位，后续档位还需回款、客户信用与交付证据。",
+      "quoteSources": [
+        "https://www.investing.com/equities/nvidia-corp-historical-data?p=NVDA",
+        "https://www.quiverquant.com/stock/NVDA/historical-prices/"
+      ],
+      "reviewSources": [
+        "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
+        "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
+      ]
+    },
+    {
+      "id": "popmart",
+      "currency": "HKD",
+      "marketAsOf": "2026-11-23",
+      "close": "139.80",
+      "planRevision": 1,
+      "matches": [],
+      "status": "not_reached",
+      "note": "收盘价尚未进入计划参考区间。",
+      "quoteSources": [
+        "https://stockanalysis.com/quote/hkg/9992/history/",
+        "https://longbridge.com/zh-CN/quote/9992.HK"
+      ],
+      "reviewSources": []
+    },
+    {
+      "id": "zijin",
+      "currency": "CNY",
+      "marketAsOf": "2026-11-23",
+      "close": "24.26",
+      "planRevision": 5,
+      "matches": [
+        {
+          "variant": 0,
+          "order": 0,
+          "position": "within"
+        },
+        {
+          "variant": 0,
+          "order": 1,
+          "position": "within"
+        }
+      ],
+      "status": "participate",
+      "note": "首两档已到价。最新已核验公告和矿山指引支持按计划分步执行。空仓时仅评估首笔，后续档位在首笔之后单独复核。",
+      "quoteSources": [
+        "https://summary.jrj.com.cn/stock/sh/601899",
+        "https://www.zhunshangshi.com/hq/detail.php?ts_code=601899.SH"
+      ],
+      "reviewSources": [
+        "https://static.cninfo.com.cn/finalpage/2026-11-24/1225684131.PDF",
+        "https://www.ivanhoemines.com/wp-content/uploads/20260930-00000-MDA-vF.pdf"
+      ]
+    },
+    {
+      "id": "zijin",
+      "currency": "HKD",
+      "marketAsOf": "2026-11-23",
+      "close": "24.02",
+      "planRevision": 5,
+      "matches": [
+        {
+          "variant": 1,
+          "order": 0,
+          "position": "within"
+        },
+        {
+          "variant": 1,
+          "order": 1,
+          "position": "within"
+        },
+        {
+          "variant": 1,
+          "order": 2,
+          "position": "within"
+        }
+      ],
+      "status": "defer",
+      "note": "三档价格已到，H股是替代方案。按当天中间价较A股折价约15.2%，交易时还需核对实际汇率、税费和流动性；现阶段按H股原条件暂缓。",
+      "quoteSources": [
+        "https://hk.investing.com/equities/zijin-mining-group-historical-data",
+        "https://www.aastocks.com/pkages/web/bankcomm/chi/whatshot/quote.asp?symbol=2899"
+      ],
+      "reviewSources": [
+        "https://www.chinamoney.com.cn/chinese/bkccpr/index.html?tab=2",
+        "https://www.hkex.com.hk/-/media/HKEX-Market/Services/Circulars-and-Notices/Participant-and-Members-Circulars/HKSCC/2026/cc_HKSCC_NOM_389_2026.pdf"
+      ]
+    }
+  ]
+}
