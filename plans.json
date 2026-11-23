@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-24T00:40:10+08:00",
+  "updatedAt": "2026-11-24T00:40:34+08:00",
   "plans": [
     {
       "id": "zijin",
@@ -1336,6 +1336,97 @@
                   {
                     "limitPrice": "195",
                     "condition": "价格不高于195美元，充分核查跌价原因与基本面；若已有风险暂停条件则本档冻结，不因低价豁免。"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "microsoft",
+      "name": "微软",
+      "ticker": "MSFT",
+      "market": "美股",
+      "sector": "企业软件与云计算",
+      "planDate": "2026-11-15",
+      "marketAsOf": "2026-11-13",
+      "referencePrice": "523.88",
+      "currency": "USD",
+      "decision": "watch",
+      "summary": "以2026年11月15日研究为准：观察，480美元以下开始条件参与，435～390美元更有吸引力。沿用原价位，未更新为实时行情。",
+      "thesis": "企业身份、数据、工作流与分发构成护城河；AI增长能否转化为扣除资本投入后的股东现金，是估值关键。盈利法与现金流折现存在明显差距，需保留安全边际。",
+      "risk": "Azure持续不达指引、云毛利与现金回报恶化、OpenAI回款承压或租赁负担上升时暂停并重估。重大监管、安全、会计或客户流失事件可使投资逻辑失效；到价不是充分买入条件。",
+      "exit": "估值明显透支更新后的增长与现金回报，或核心投资逻辑被破坏时重新评估并退出。三年复盘机会成本，五年重新研究，不使用固定永久目标价。",
+      "review": "季度核验Azure、Microsoft365与Copilot商业化、FCF与资本开支、融资租赁本金、RPO近期兑现及OpenAI应收回款；新证据出现后再调整价格。",
+      "sourceUrl": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast",
+      "variants": [
+        {
+          "currency": "USD",
+          "orders": [
+            {
+              "limitPrice": "480",
+              "condition": "到价后核验最新财报与经营假设，投资逻辑完整才考虑首档。"
+            },
+            {
+              "limitPrice": "435",
+              "condition": "复核Azure增长质量、云毛利及现金开支；结构性恶化时暂停。"
+            },
+            {
+              "limitPrice": "390",
+              "condition": "重估未来现金回报；现金流预期同步大幅下修时不机械加仓。"
+            },
+            {
+              "limitPrice": "345",
+              "condition": "重新审查OpenAI回款、租赁承诺和资本纪律，确认投资逻辑仍成立。"
+            }
+          ]
+        }
+      ],
+      "revision": 1,
+      "updatedAt": "2026-11-24T00:40:34+08:00",
+      "history": [
+        {
+          "revision": 1,
+          "updatedAt": "2026-11-24T00:40:34+08:00",
+          "reason": "发布研究计划。",
+          "snapshot": {
+            "id": "microsoft",
+            "name": "微软",
+            "ticker": "MSFT",
+            "market": "美股",
+            "sector": "企业软件与云计算",
+            "planDate": "2026-11-15",
+            "marketAsOf": "2026-11-13",
+            "referencePrice": "523.88",
+            "currency": "USD",
+            "decision": "watch",
+            "summary": "以2026年11月15日研究为准：观察，480美元以下开始条件参与，435～390美元更有吸引力。沿用原价位，未更新为实时行情。",
+            "thesis": "企业身份、数据、工作流与分发构成护城河；AI增长能否转化为扣除资本投入后的股东现金，是估值关键。盈利法与现金流折现存在明显差距，需保留安全边际。",
+            "risk": "Azure持续不达指引、云毛利与现金回报恶化、OpenAI回款承压或租赁负担上升时暂停并重估。重大监管、安全、会计或客户流失事件可使投资逻辑失效；到价不是充分买入条件。",
+            "exit": "估值明显透支更新后的增长与现金回报，或核心投资逻辑被破坏时重新评估并退出。三年复盘机会成本，五年重新研究，不使用固定永久目标价。",
+            "review": "季度核验Azure、Microsoft365与Copilot商业化、FCF与资本开支、融资租赁本金、RPO近期兑现及OpenAI应收回款；新证据出现后再调整价格。",
+            "sourceUrl": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast",
+            "variants": [
+              {
+                "currency": "USD",
+                "orders": [
+                  {
+                    "limitPrice": "480",
+                    "condition": "到价后核验最新财报与经营假设，投资逻辑完整才考虑首档。"
+                  },
+                  {
+                    "limitPrice": "435",
+                    "condition": "复核Azure增长质量、云毛利及现金开支；结构性恶化时暂停。"
+                  },
+                  {
+                    "limitPrice": "390",
+                    "condition": "重估未来现金回报；现金流预期同步大幅下修时不机械加仓。"
+                  },
+                  {
+                    "limitPrice": "345",
+                    "condition": "重新审查OpenAI回款、租赁承诺和资本纪律，确认投资逻辑仍成立。"
                   }
                 ]
               }
