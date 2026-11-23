@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23T16:51:32+00:00",
+  "updatedAt": "2026-11-23T21:48:14+00:00",
   "checks": [
     {
       "id": "apple",
       "currency": "USD",
-      "marketAsOf": "2026-11-20",
-      "close": "342.56",
+      "marketAsOf": "2026-11-23",
+      "close": "349.08",
       "planRevision": 1,
       "matches": [],
       "status": "not_reached",
       "note": "收盘价尚未进入计划参考区间。",
       "quoteSources": [
         "https://stockanalysis.com/stocks/aapl/history/",
-        "https://www.quiverquant.com/stock/AAPL/historical-prices/"
+        "https://finviz.com/stock?t=AAPL"
       ],
       "reviewSources": []
     },
@@ -80,39 +80,30 @@
     {
       "id": "micron",
       "currency": "USD",
-      "marketAsOf": "2026-11-20",
-      "close": "594.51",
-      "planRevision": 1,
-      "matches": [
-        {
-          "variant": 0,
-          "order": 0,
-          "position": "within"
-        }
-      ],
-      "status": "insufficient",
-      "note": "已进入650美元首档。最近年报支持原有盈利和产能逻辑，但原计划要求核清大跌原因。芯片股同步大跌提供了行业背景，本次仍待核实当前DRAM/NAND实现价、客户交付与HBM是否出现重大变化。",
-      "quoteSources": [
-        "https://ph.investing.com/equities/micron-tech-historical-data",
-        "https://www.financecharts.com/stocks/MU/summary/price"
-      ],
-      "reviewSources": [
-        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm",
-        "https://investors.micron.com/overview/default.aspx"
-      ]
-    },
-    {
-      "id": "microsoft",
-      "currency": "USD",
-      "marketAsOf": "2026-11-20",
-      "close": "484.52",
+      "marketAsOf": "2026-11-23",
+      "close": "707.70",
       "planRevision": 1,
       "matches": [],
       "status": "not_reached",
       "note": "收盘价尚未进入计划参考区间。",
       "quoteSources": [
-        "https://nz.finance.yahoo.com/quote/MSFT/history/",
-        "https://www.quiverquant.com/stock/MSFT/historical-prices/"
+        "https://stockanalysis.com/stocks/mu/history/",
+        "https://finviz.com/stock?t=MU"
+      ],
+      "reviewSources": []
+    },
+    {
+      "id": "microsoft",
+      "currency": "USD",
+      "marketAsOf": "2026-11-23",
+      "close": "492.50",
+      "planRevision": 1,
+      "matches": [],
+      "status": "not_reached",
+      "note": "收盘价尚未进入计划参考区间。",
+      "quoteSources": [
+        "https://stockanalysis.com/stocks/msft/history/",
+        "https://finviz.com/stock?t=MSFT"
       ],
       "reviewSources": []
     },
@@ -149,51 +140,17 @@
     {
       "id": "nvidia",
       "currency": "USD",
-      "marketAsOf": "2026-11-20",
-      "close": "125.53",
+      "marketAsOf": "2026-11-23",
+      "close": "165.05",
       "planRevision": 1,
-      "matches": [
-        {
-          "variant": 0,
-          "order": 0,
-          "position": "within"
-        },
-        {
-          "variant": 0,
-          "order": 1,
-          "position": "within"
-        },
-        {
-          "variant": 0,
-          "order": 2,
-          "position": "within"
-        },
-        {
-          "variant": 1,
-          "order": 0,
-          "position": "within"
-        },
-        {
-          "variant": 1,
-          "order": 1,
-          "position": "within"
-        },
-        {
-          "variant": 1,
-          "order": 2,
-          "position": "within"
-        }
-      ],
-      "status": "defer",
-      "note": "11月20日正式收盘触及多个档位。11月23日公司宣布黄仁勋复任，董事会独立调查仍在继续。三季度应收账款周转天数从60天升至64天，公司归因于Rubin发货时点及部分投资级客户账期延长。经营现金流同比从238亿升至483亿美元。暂缓，待下一次正式收盘重验价位，后续档位继续核对回款、客户信用和交付。",
+      "matches": [],
+      "status": "not_reached",
+      "note": "收盘价尚未进入计划参考区间。",
       "quoteSources": [
-        "https://www.investing.com/equities/nvidia-corp-historical-data?p=NVDA",
-        "https://www.quiverquant.com/stock/NVDA/historical-prices/"
+        "https://stockanalysis.com/stocks/nvda/history/",
+        "https://finviz.com/stock?t=NVDA"
       ],
-      "reviewSources": [
-        "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nov23pressrelease.htm",
-        "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27cfocommentary.htm"
-      ]
+      "reviewSources": []
     },
     {
       "id": "popmart",
