@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-23T01:23:58+08:00",
+  "updatedAt": "2026-11-23T23:49:10+08:00",
   "plans": [
     {
       "id": "zijin",
@@ -887,87 +887,6 @@
       ]
     },
     {
-      "id": "yuyuan",
-      "name": "老庙黄金 / 豫园股份",
-      "ticker": "600655.SH",
-      "market": "A股",
-      "sector": "消费",
-      "planDate": "2026-11-15",
-      "marketAsOf": "2026-11-13",
-      "referencePrice": "4.36",
-      "currency": "CNY",
-      "decision": "avoid",
-      "summary": "维持观察。只有经营与融资准入条件全部成立，才评估条件价位。",
-      "thesis": "珠宝品牌之外，集团资产、融资负担与回款决定上市公司收益。",
-      "risk": "重大信用、审计或治理问题，以及净融资压力恶化，均需优先复核。",
-      "exit": "股价超过当时重估的合理价值时评估兑现，长期缺乏经营进展时重审。",
-      "review": "核对连续两季扣非、珠宝经营、库存、现金与净融资。",
-      "variants": [
-        {
-          "currency": "CNY",
-          "orders": [
-            {
-              "limitPrice": "2.8",
-              "condition": "连续两季扣非盈利且融资、现金与珠宝指标共同改善。"
-            },
-            {
-              "limitPrice": "2.5",
-              "condition": "新增披露确认改善持续，排除信用恶化。"
-            },
-            {
-              "limitPrice": "3",
-              "condition": "新证据支持持续归母至少 12 亿元。"
-            }
-          ]
-        }
-      ],
-      "revision": 1,
-      "updatedAt": "2026-11-22T21:31:52+08:00",
-      "history": [
-        {
-          "revision": 1,
-          "updatedAt": "2026-11-22T21:31:52+08:00",
-          "reason": "发布研究计划。",
-          "snapshot": {
-            "id": "yuyuan",
-            "name": "老庙黄金 / 豫园股份",
-            "ticker": "600655.SH",
-            "market": "A股",
-            "sector": "消费",
-            "planDate": "2026-11-15",
-            "marketAsOf": "2026-11-13",
-            "referencePrice": "4.36",
-            "currency": "CNY",
-            "decision": "avoid",
-            "summary": "维持观察。只有经营与融资准入条件全部成立，才评估条件价位。",
-            "thesis": "珠宝品牌之外，集团资产、融资负担与回款决定上市公司收益。",
-            "risk": "重大信用、审计或治理问题，以及净融资压力恶化，均需优先复核。",
-            "exit": "股价超过当时重估的合理价值时评估兑现，长期缺乏经营进展时重审。",
-            "review": "核对连续两季扣非、珠宝经营、库存、现金与净融资。",
-            "variants": [
-              {
-                "currency": "CNY",
-                "orders": [
-                  {
-                    "limitPrice": "2.8",
-                    "condition": "连续两季扣非盈利且融资、现金与珠宝指标共同改善。"
-                  },
-                  {
-                    "limitPrice": "2.5",
-                    "condition": "新增披露确认改善持续，排除信用恶化。"
-                  },
-                  {
-                    "limitPrice": "3",
-                    "condition": "新证据支持持续归母至少 12 亿元。"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
       "id": "laopu",
       "name": "老铺黄金",
       "ticker": "06181.HK",
@@ -982,28 +901,29 @@
       "thesis": "品牌溢价需要由周转、经营现金和持续的盈利能力支撑。",
       "risk": "严重品控、融资或诚信问题，以及持续的库存和现金恶化，应暂停并重估。",
       "exit": "经营证据未改善时，350–400 港元是原计划的估值复核区间。",
-      "review": "核对股东会派息结果，除息后重估原价格水平。",
+      "review": "拟议中期派息仍待2026年11月25日股东会批准；若实施并除息，原240／210／240港元须重估，保守调整示例219／189／219港元。",
+      "sourceUrl": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0923/2026092300467_c.pdf",
       "variants": [
         {
           "currency": "HKD",
           "orders": [
             {
               "limitPrice": "240",
-              "condition": "核对公告、品控、信用及正常化利润。"
+              "condition": "复核新公告、品控及信用，正常利润约35亿元判断仍成立；价格与经营条件同时满足。"
             },
             {
               "limitPrice": "210",
-              "condition": "新增经营证据，且现金和融资压力未恶化。"
+              "condition": "首档之后取得新的经营证据；库存、经营现金与融资压力未恶化。"
             },
             {
               "limitPrice": "240",
-              "condition": "需有正常化利润、现金及成品周转改善的证据。"
+              "condition": "正式披露支持正常利润至少45亿元、经营现金／利润约70%以上、成品周转改善且净融资压力未升。"
             }
           ]
         }
       ],
-      "revision": 1,
-      "updatedAt": "2026-11-22T21:31:52+08:00",
+      "revision": 2,
+      "updatedAt": "2026-11-23T23:49:10+08:00",
       "history": [
         {
           "revision": 1,
@@ -1040,6 +960,48 @@
                   {
                     "limitPrice": "240",
                     "condition": "需有正常化利润、现金及成品周转改善的证据。"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "revision": 2,
+          "updatedAt": "2026-11-23T23:49:10+08:00",
+          "reason": "完成研究核验，明确三档各自的经营准入条件及除息调整；沿用原研究和行情日期。",
+          "snapshot": {
+            "id": "laopu",
+            "name": "老铺黄金",
+            "ticker": "06181.HK",
+            "market": "港股",
+            "sector": "消费",
+            "planDate": "2026-11-19",
+            "marketAsOf": "2026-11-18",
+            "referencePrice": "279.2",
+            "currency": "HKD",
+            "decision": "watch",
+            "summary": "观察库存与现金转化，买入条件须同时具备估值折价和经营证据。",
+            "thesis": "品牌溢价需要由周转、经营现金和持续的盈利能力支撑。",
+            "risk": "严重品控、融资或诚信问题，以及持续的库存和现金恶化，应暂停并重估。",
+            "exit": "经营证据未改善时，350–400 港元是原计划的估值复核区间。",
+            "review": "拟议中期派息仍待2026年11月25日股东会批准；若实施并除息，原240／210／240港元须重估，保守调整示例219／189／219港元。",
+            "sourceUrl": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0923/2026092300467_c.pdf",
+            "variants": [
+              {
+                "currency": "HKD",
+                "orders": [
+                  {
+                    "limitPrice": "240",
+                    "condition": "复核新公告、品控及信用，正常利润约35亿元判断仍成立；价格与经营条件同时满足。"
+                  },
+                  {
+                    "limitPrice": "210",
+                    "condition": "首档之后取得新的经营证据；库存、经营现金与融资压力未恶化。"
+                  },
+                  {
+                    "limitPrice": "240",
+                    "condition": "正式披露支持正常利润至少45亿元、经营现金／利润约70%以上、成品周转改善且净融资压力未升。"
                   }
                 ]
               }
