@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-23T23:49:10+08:00",
+  "updatedAt": "2026-11-23T23:58:46+08:00",
   "plans": [
     {
       "id": "zijin",
@@ -892,17 +892,17 @@
       "ticker": "06181.HK",
       "market": "港股",
       "sector": "消费",
-      "planDate": "2026-11-19",
-      "marketAsOf": "2026-11-18",
-      "referencePrice": "279.2",
+      "planDate": "2026-11-23",
+      "marketAsOf": "2026-11-23",
+      "referencePrice": "266.80",
       "currency": "HKD",
       "decision": "watch",
-      "summary": "观察库存与现金转化，买入条件须同时具备估值折价和经营证据。",
+      "summary": "11月23日收盘266.80港元，高于首档240港元。继续观察库存周转和经营现金转化。",
       "thesis": "品牌溢价需要由周转、经营现金和持续的盈利能力支撑。",
       "risk": "严重品控、融资或诚信问题，以及持续的库存和现金恶化，应暂停并重估。",
       "exit": "经营证据未改善时，350–400 港元是原计划的估值复核区间。",
-      "review": "拟议中期派息仍待2026年11月25日股东会批准；若实施并除息，原240／210／240港元须重估，保守调整示例219／189／219港元。",
-      "sourceUrl": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0923/2026092300467_c.pdf",
+      "review": "11月25日临时股东会审议中期股息。若获批准，公告所列除息日为11月27日。除息后重估原限价，保守示例为219／189／219港元。",
+      "sourceUrl": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0825/2026082500430.pdf",
       "variants": [
         {
           "currency": "HKD",
@@ -922,8 +922,8 @@
           ]
         }
       ],
-      "revision": 2,
-      "updatedAt": "2026-11-23T23:49:10+08:00",
+      "revision": 3,
+      "updatedAt": "2026-11-23T23:58:46+08:00",
       "history": [
         {
           "revision": 1,
@@ -987,6 +987,48 @@
             "exit": "经营证据未改善时，350–400 港元是原计划的估值复核区间。",
             "review": "拟议中期派息仍待2026年11月25日股东会批准；若实施并除息，原240／210／240港元须重估，保守调整示例219／189／219港元。",
             "sourceUrl": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0923/2026092300467_c.pdf",
+            "variants": [
+              {
+                "currency": "HKD",
+                "orders": [
+                  {
+                    "limitPrice": "240",
+                    "condition": "复核新公告、品控及信用，正常利润约35亿元判断仍成立；价格与经营条件同时满足。"
+                  },
+                  {
+                    "limitPrice": "210",
+                    "condition": "首档之后取得新的经营证据；库存、经营现金与融资压力未恶化。"
+                  },
+                  {
+                    "limitPrice": "240",
+                    "condition": "正式披露支持正常利润至少45亿元、经营现金／利润约70%以上、成品周转改善且净融资压力未升。"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "revision": 3,
+          "updatedAt": "2026-11-23T23:58:46+08:00",
+          "reason": "按11月23日正式收盘和人民币中间价复核估值及条件档位，补充公司派息时间表。",
+          "snapshot": {
+            "id": "laopu",
+            "name": "老铺黄金",
+            "ticker": "06181.HK",
+            "market": "港股",
+            "sector": "消费",
+            "planDate": "2026-11-23",
+            "marketAsOf": "2026-11-23",
+            "referencePrice": "266.80",
+            "currency": "HKD",
+            "decision": "watch",
+            "summary": "11月23日收盘266.80港元，高于首档240港元。继续观察库存周转和经营现金转化。",
+            "thesis": "品牌溢价需要由周转、经营现金和持续的盈利能力支撑。",
+            "risk": "严重品控、融资或诚信问题，以及持续的库存和现金恶化，应暂停并重估。",
+            "exit": "经营证据未改善时，350–400 港元是原计划的估值复核区间。",
+            "review": "11月25日临时股东会审议中期股息。若获批准，公告所列除息日为11月27日。除息后重估原限价，保守示例为219／189／219港元。",
+            "sourceUrl": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0825/2026082500430.pdf",
             "variants": [
               {
                 "currency": "HKD",
