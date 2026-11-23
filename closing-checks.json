@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23T16:42:57+00:00",
+  "updatedAt": "2026-11-23T16:51:32+00:00",
   "checks": [
     {
       "id": "apple",
@@ -185,14 +185,14 @@
         }
       ],
       "status": "defer",
-      "note": "11月20日正式收盘触及多个档位。新季报收入同比增长103%，11月23日公司宣布黄仁勋复任，同时董事会独立调查仍在继续。先用下一次正式收盘重验价位，后续档位还需回款、客户信用与交付证据。",
+      "note": "11月20日正式收盘触及多个档位。11月23日公司宣布黄仁勋复任，董事会独立调查仍在继续。三季度应收账款周转天数从60天升至64天，公司归因于Rubin发货时点及部分投资级客户账期延长。经营现金流同比从238亿升至483亿美元。暂缓，待下一次正式收盘重验价位，后续档位继续核对回款、客户信用和交付。",
       "quoteSources": [
         "https://www.investing.com/equities/nvidia-corp-historical-data?p=NVDA",
         "https://www.quiverquant.com/stock/NVDA/historical-prices/"
       ],
       "reviewSources": [
-        "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
-        "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nov23pressrelease.htm",
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27cfocommentary.htm"
       ]
     },
     {
@@ -229,13 +229,13 @@
         }
       ],
       "status": "participate",
-      "note": "首两档已到价。最新已核验公告和矿山指引支持按计划分步执行。空仓时仅评估首笔，后续档位在首笔之后单独复核。",
+      "note": "首两档已到价，空仓按计划只执行首笔，第二档另行复核。港交所披露公司11月23日以每股24.17—24.33元回购100万股A股，拟用于员工持股或股权激励。回购规模约占回购前A股已发行股份（扣除库存股）的0.005%，买入依据仍是矿山经营和估值。",
       "quoteSources": [
         "https://summary.jrj.com.cn/stock/sh/601899",
         "https://www.zhunshangshi.com/hq/detail.php?ts_code=601899.SH"
       ],
       "reviewSources": [
-        "https://static.cninfo.com.cn/finalpage/2026-11-24/1225684131.PDF",
+        "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1123/2026112300705_c.pdf",
         "https://www.ivanhoemines.com/wp-content/uploads/20260930-00000-MDA-vF.pdf"
       ]
     },
