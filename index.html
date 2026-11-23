@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#182c32">
-<meta name="description" content="查看 A 股、港股和美股的公司研究、分批参考价位和复核条件。">
-<title>投资计划台 · 公司研究与交易计划</title>
-<link rel="stylesheet" href="./styles.css">
-<script src="./app.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f6f2">
+  <meta name="description" content="查看 A 股、港股和美股的公司研究、分批参考价位和复核条件。">
+  <title>投资计划台 · 公司研究与交易计划</title>
+  <link rel="stylesheet" href="./styles.css?v=20261124">
+  <script src="./app.js?v=20261124" defer></script>
 </head>
 <body>
-<a class="skip" href="#main">跳到主要内容</a>
-<aside class="sidebar" aria-label="主导航">
-  <a class="brand" href="#overview"><span class="brand-icon" aria-hidden="true"><i></i><i></i><i></i></span><span>投资计划台<small>公开研究计划</small></span></a>
-  <nav>
-    <button class="nav-item active" data-view="overview"><span class="nav-icon" aria-hidden="true">▦</span>计划总览<span id="nav-count" class="nav-count"></span></button>
-    <button class="nav-item" data-view="reviews"><span class="nav-icon" aria-hidden="true">◷</span>复核清单</button>
-    <button class="nav-item" data-view="history"><span class="nav-icon" aria-hidden="true">≋</span>变更记录</button>
-  </nav>
-  <div class="sidebar-companies"><div class="workspace-label">研究中的公司</div><div id="company-nav"></div></div>
-</aside>
-<div class="shell">
-  <header class="topbar"><div class="breadcrumb" id="breadcrumb-current">计划总览</div><button class="button" id="copy-link">复制网站链接</button></header>
-  <main id="main" tabindex="-1"><div id="loading" class="loading">正在读取研究计划…</div><div id="content"></div></main>
-  <footer>页内行情标明研究时的参考日期。价格与经营条件需同时满足。</footer>
-</div>
-<dialog id="plan-dialog" aria-labelledby="dialog-title"><div id="dialog-body"></div></dialog>
-<div id="toast" role="status" aria-live="polite"></div>
+  <a class="skip" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <div class="site-header-inner frame">
+      <a class="brand" href="#overview">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>投资计划台</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#overview" data-view="overview" aria-current="page">计划总览</a>
+        <a href="#reviews" data-view="reviews">复核清单</a>
+        <a href="#history" data-view="history">变更记录</a>
+      </nav>
+      <button class="button share-button" id="copy-link" type="button" aria-label="复制网站链接">
+        <span class="copy-mark" aria-hidden="true"></span><span>复制链接</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="frame" id="main" tabindex="-1">
+    <div id="loading" class="loading" role="status">正在读取研究计划…</div>
+    <div id="content"></div>
+  </main>
+
+  <footer class="site-footer frame">
+    <span class="footer-brand">投资计划台</span>
+    <p>行情为研究时的参考数据。请结合最新报价和经营条件复核。</p>
+  </footer>
+
+  <dialog id="plan-dialog" aria-labelledby="dialog-title"><div id="dialog-body"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
