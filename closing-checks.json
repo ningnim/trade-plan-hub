@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23T21:48:14+00:00",
+  "updatedAt": "2026-11-25T21:42:16+00:00",
   "checks": [
     {
       "id": "apple",
       "currency": "USD",
-      "marketAsOf": "2026-11-23",
-      "close": "349.08",
+      "marketAsOf": "2026-11-25",
+      "close": "355.58",
       "planRevision": 1,
       "matches": [],
       "status": "not_reached",
@@ -80,23 +80,33 @@
     {
       "id": "micron",
       "currency": "USD",
-      "marketAsOf": "2026-11-23",
-      "close": "707.70",
+      "marketAsOf": "2026-11-25",
+      "close": "601.25",
       "planRevision": 1,
-      "matches": [],
-      "status": "not_reached",
-      "note": "收盘价尚未进入计划参考区间。",
+      "matches": [
+        {
+          "variant": 0,
+          "order": 0,
+          "position": "within"
+        }
+      ],
+      "status": "insufficient",
+      "note": "收盘触及650美元首档。公司11月24日提交的代理声明披露，多数2027年HBM供应量已有协议、HBM4放量在推进。TrendForce于11月25日下调行业预期，指出中国云厂商削减订单、NAND价格或承压。行业走弱已有证据，仍缺公司层面的最新DRAM/NAND实现价格、订单和HBM实际交付数据，以核清本轮下跌对盈利的影响。继续待核实，下一次财报定于12月17日。",
       "quoteSources": [
         "https://stockanalysis.com/stocks/mu/history/",
         "https://finviz.com/stock?t=MU"
       ],
-      "reviewSources": []
+      "reviewSources": [
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000034/mu-20261124.htm",
+        "https://www.trendforce.com/presscenter/news/20261125-13321.html",
+        "https://investors.micron.com/news/press-release/2026/Micron-Technology-to-Report-Fiscal-First-Quarter-Results-on-December-17-2026/default.aspx"
+      ]
     },
     {
       "id": "microsoft",
       "currency": "USD",
-      "marketAsOf": "2026-11-23",
-      "close": "492.50",
+      "marketAsOf": "2026-11-25",
+      "close": "489.93",
       "planRevision": 1,
       "matches": [],
       "status": "not_reached",
@@ -140,17 +150,32 @@
     {
       "id": "nvidia",
       "currency": "USD",
-      "marketAsOf": "2026-11-23",
-      "close": "165.05",
+      "marketAsOf": "2026-11-25",
+      "close": "149.30",
       "planRevision": 1,
-      "matches": [],
-      "status": "not_reached",
-      "note": "收盘价尚未进入计划参考区间。",
+      "matches": [
+        {
+          "variant": 0,
+          "order": 0,
+          "position": "within"
+        },
+        {
+          "variant": 1,
+          "order": 0,
+          "position": "within"
+        }
+      ],
+      "status": "defer",
+      "note": "收盘触及155美元首档。三季度财报及指引已复核，黄仁勋已复任，但董事会独立调查继续，国会仍安排12月1日及2日分别问询CEO和总法律顾问。季报显示应收账款周转天数从60天增至64天。原计划要求先完成治理交接、客户信用和回款复核，首笔暂缓，关注问询后的披露及主要客户回款与交付证据。",
       "quoteSources": [
         "https://stockanalysis.com/stocks/nvda/history/",
         "https://finviz.com/stock?t=NVDA"
       ],
-      "reviewSources": []
+      "reviewSources": [
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nov23pressrelease.htm",
+        "https://foreignaffairs.house.gov/news/press-releases/chairmen-mast-moolenaar-and-crawford-release-statement-on-jensen-huang-s-reinstatement",
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27cfocommentary.htm"
+      ]
     },
     {
       "id": "popmart",
