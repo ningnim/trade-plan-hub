@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-25T21:42:16+00:00",
+  "updatedAt": "2026-11-27T03:05:25+00:00",
   "checks": [
     {
       "id": "apple",
@@ -20,62 +20,76 @@
     {
       "id": "byd",
       "currency": "CNY",
-      "marketAsOf": "2026-11-23",
-      "close": "78.04",
+      "marketAsOf": "2026-11-26",
+      "close": "73.62",
       "planRevision": 1,
-      "matches": [],
-      "status": "not_reached",
-      "note": "收盘价尚未进入计划参考区间。",
-      "quoteSources": [
-        "https://summary.jrj.com.cn/stock/sz/002594",
-        "https://www.zhunshangshi.com/hq/detail.php?tab=flow&ts_code=002594.SZ"
+      "matches": [
+        {
+          "variant": 0,
+          "order": 0,
+          "position": "within"
+        }
       ],
-      "reviewSources": []
+      "status": "insufficient",
+      "note": "73.62元进入70–74元首档。三季度扣非归母利润86.30亿元、同比增长25.25%。按乘联分会8至10月同口径销量估算，国内新能源乘用车零售量由23.39万辆增至25.03万辆，份额约从23.3%缓降到22.6%。11月局部车型仍有促销，待核实主要车型成交折扣和终端份额能否企稳，首笔待复核。",
+      "quoteSources": [
+        "https://stockanalysis.com/quote/she/002594/history/",
+        "https://cn.investing.com/equities/byd-a-historical-data"
+      ],
+      "reviewSources": [
+        "https://static.cninfo.com.cn/finalpage/2026-10-30/1225641442.PDF",
+        "https://www.cada.cn/Trends/info_91_10566.html",
+        "https://cada.cn/Trends/info_91_10580.html",
+        "https://cada.cn/Trends/info_91_10597.html",
+        "https://dealer.autohome.com.cn/2138260/news_1591699301.html"
+      ]
     },
     {
       "id": "cmb",
       "currency": "CNY",
-      "marketAsOf": "2026-11-23",
-      "close": "43.26",
+      "marketAsOf": "2026-11-26",
+      "close": "43.38",
       "planRevision": 1,
       "matches": [],
       "status": "not_reached",
       "note": "收盘价尚未进入计划参考区间。",
       "quoteSources": [
-        "https://summary.jrj.com.cn/stock/sh/600036",
-        "https://longbridge.com/zh-CN/quote/600036.SH"
+        "https://stockanalysis.com/quote/sha/600036/history/",
+        "https://cn.investing.com/equities/merchants-bank-historical-data"
       ],
       "reviewSources": []
     },
     {
       "id": "cypc",
       "currency": "CNY",
-      "marketAsOf": "2026-11-23",
-      "close": "31.35",
+      "marketAsOf": "2026-11-26",
+      "close": "31.80",
       "planRevision": 1,
       "matches": [],
       "status": "not_reached",
       "note": "收盘价尚未进入计划参考区间。",
       "quoteSources": [
-        "https://cn.investing.com/equities/yangtze-power-historical-data",
-        "https://stock.stockstar.com/RB2026112300020323.shtml"
+        "https://stockanalysis.com/quote/sha/600900/history/",
+        "https://cn.investing.com/equities/yangtze-power-historical-data"
       ],
       "reviewSources": []
     },
     {
       "id": "laopu",
       "currency": "HKD",
-      "marketAsOf": "2026-11-23",
+      "marketAsOf": "2026-11-26",
       "close": "266.80",
       "planRevision": 3,
       "matches": [],
       "status": "not_reached",
       "note": "收盘价尚未进入计划参考区间。",
       "quoteSources": [
-        "https://ca.investing.com/equities/laopu-gold-historical-data",
-        "https://markets.ft.markitdigital.com/data/equities/tearsheet/summary?s=6181%3AHKG"
+        "https://stockanalysis.com/quote/hkg/6181/history/",
+        "https://cn.investing.com/equities/laopu-gold-historical-data"
       ],
-      "reviewSources": []
+      "reviewSources": [
+        "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1125/2026112500533_c.pdf"
+      ]
     },
     {
       "id": "micron",
@@ -120,30 +134,30 @@
     {
       "id": "midea",
       "currency": "CNY",
-      "marketAsOf": "2026-11-23",
-      "close": "94.13",
+      "marketAsOf": "2026-11-26",
+      "close": "94.51",
       "planRevision": 1,
       "matches": [],
       "status": "not_reached",
       "note": "收盘价尚未进入计划参考区间。",
       "quoteSources": [
-        "https://cn.investing.com/equities/midea-group-a-historical-data",
-        "https://summary.jrj.com.cn/stock/sz/000333"
+        "https://stockanalysis.com/quote/she/000333/history/",
+        "https://cn.investing.com/equities/midea-group-a-historical-data"
       ],
       "reviewSources": []
     },
     {
       "id": "moutai",
       "currency": "CNY",
-      "marketAsOf": "2026-11-23",
-      "close": "1439.00",
+      "marketAsOf": "2026-11-26",
+      "close": "1469.00",
       "planRevision": 1,
       "matches": [],
       "status": "not_reached",
       "note": "收盘价尚未进入计划参考区间。",
       "quoteSources": [
-        "https://summary.jrj.com.cn/stock/sh/600519",
-        "https://www.laocaifu.com/stock/600519/lishi/"
+        "https://stockanalysis.com/quote/sha/600519/history/",
+        "https://verityrank.com.cn/companies/kweichow-maotai/market-history"
       ],
       "reviewSources": []
     },
@@ -180,23 +194,23 @@
     {
       "id": "popmart",
       "currency": "HKD",
-      "marketAsOf": "2026-11-23",
-      "close": "139.80",
+      "marketAsOf": "2026-11-26",
+      "close": "138.10",
       "planRevision": 1,
       "matches": [],
       "status": "not_reached",
       "note": "收盘价尚未进入计划参考区间。",
       "quoteSources": [
         "https://stockanalysis.com/quote/hkg/9992/history/",
-        "https://longbridge.com/zh-CN/quote/9992.HK"
+        "https://cn.investing.com/equities/pop-mart-international-group-historical-data"
       ],
       "reviewSources": []
     },
     {
       "id": "zijin",
       "currency": "CNY",
-      "marketAsOf": "2026-11-23",
-      "close": "24.26",
+      "marketAsOf": "2026-11-26",
+      "close": "23.75",
       "planRevision": 5,
       "matches": [
         {
@@ -211,21 +225,21 @@
         }
       ],
       "status": "participate",
-      "note": "首两档已到价，空仓按计划只执行首笔，第二档另行复核。港交所披露公司11月23日以每股24.17—24.33元回购100万股A股，拟用于员工持股或股权激励。回购规模约占回购前A股已发行股份（扣除库存股）的0.005%，买入依据仍是矿山经营和估值。",
+      "note": "23.75元满足前两档价格，上方距离第三档23元仍有差距。11月26日披露回购80万股A股用于员工持股或股权激励，已核资料未见改变首笔判断的新矿山或融资事项。若仍空仓，核对实际报价及新增公告后可按原计划启动首笔。第二档须首笔实际成交后，单独复核中周期盈利及加仓风险。",
       "quoteSources": [
-        "https://summary.jrj.com.cn/stock/sh/601899",
-        "https://www.zhunshangshi.com/hq/detail.php?ts_code=601899.SH"
+        "https://stockanalysis.com/quote/sha/601899/history/",
+        "https://cn.investing.com/equities/zijin-mining-historical-data"
       ],
       "reviewSources": [
-        "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1123/2026112300705_c.pdf",
-        "https://www.ivanhoemines.com/wp-content/uploads/20260930-00000-MDA-vF.pdf"
+        "https://www.zjky.cn/upload/file/2026/11/26/d61fefa3c86947ecb9f1b405ce7682c6.pdf",
+        "https://www.ivanhoemines.com/news-stories/news-release/ivanhoe-mines-issues-2026-third-quarter-financial-results-overview-of-operations-and-exploration-activities/"
       ]
     },
     {
       "id": "zijin",
       "currency": "HKD",
-      "marketAsOf": "2026-11-23",
-      "close": "24.02",
+      "marketAsOf": "2026-11-26",
+      "close": "23.22",
       "planRevision": 5,
       "matches": [
         {
@@ -245,10 +259,10 @@
         }
       ],
       "status": "defer",
-      "note": "三档价格已到，H股是替代方案。按当天中间价较A股折价约15.2%，交易时还需核对实际汇率、税费和流动性；现阶段按H股原条件暂缓。",
+      "note": "三档价格条件均满足。按当天1港元兑0.85582元人民币的中间价折算，较A股折价约16.3%。H股是替代方案，原计划要求按实际可成交汇率、税费与流动性复核折价，并完成计入汇率波动的下行压力测试。首笔暂缓。",
       "quoteSources": [
-        "https://hk.investing.com/equities/zijin-mining-group-historical-data",
-        "https://www.aastocks.com/pkages/web/bankcomm/chi/whatshot/quote.asp?symbol=2899"
+        "https://stockanalysis.com/quote/hkg/2899/history/",
+        "https://cn.investing.com/equities/zijin-mining-group-historical-data"
       ],
       "reviewSources": [
         "https://www.chinamoney.com.cn/chinese/bkccpr/index.html?tab=2",
